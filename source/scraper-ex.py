@@ -118,7 +118,7 @@ df = pd.DataFrame({
 df.reset_index(drop=True, inplace=True)
 df.insert(0, "ID", df.index + 1)
 
-output_folder = "scraped_data"
+output_folder = "dataset"
 os.makedirs(output_folder, exist_ok=True)
 output_path = os.path.join(output_folder, "idealista_valencia_full.csv")
 
